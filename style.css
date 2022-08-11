@@ -1,0 +1,118 @@
+/* reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global style */
+html {
+  height: 100%;
+  background: white;
+  background: radial-gradient(circle, white 10%, #eee);
+}
+
+body {
+  font: 16px arial;
+}
+
+.devita {  
+  background: linear-gradient(#baffc9, #a0ffb5);
+  color:#aeaeae;
+  margin:10px;
+  border-radius:12px;
+}
+
+.teks {padding:10px;
+}
+
+/* container kalkulator */
+#kalkulator {
+  width: 325px;
+  height: 300px; /* nanti auto */
+  margin: 20px auto;
+  padding: 20px 20px 10px;
+  background-color:#6C63FF;
+  box-shadow: 0 4px 0 #64bf77, 0 10px 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+/* bagian atas (tombol C dan layar) */
+.atas {
+  overflow: hidden;
+  padding-right: 6px;
+}
+.tombol {
+  width: 66px;
+  height: 36px;
+  float: left;
+  background: #ffb3ba;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 35px;
+  box-shadow: 0 4px 0 #df8c94;
+  margin: 0 5px 11px 0;
+  position: relative;
+  top: 0;
+  
+  user-select: none;
+  cursor: pointer;
+  
+  transition: 0.2s ease;
+}
+
+.layar {
+  width: 208px;
+  height: 40px;
+  background-color:black;
+  float: right;
+  text-align: right;
+  line-height: 40px;
+  padding: 0 10px;
+  box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-size: 1.1em;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+
+/* bagian bawah */
+.bawah {
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.tombol.angka {
+  background: white;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+  color: #999;
+}
+
+.tombol.operator {
+  background: #ffdfba;
+  box-shadow: 0 4px 0 #dea768;
+  color: #dea768;
+  font-size: 1.4em;
+}
+
+.tombol.hitung {
+  background: #ffffba;
+  box-shadow: 0 4px 0 #bebe47;
+  color: #bebe47;
+  font-size: 1.4em;
+}
+
+
+
+.tombol:hover {
+  filter: brightness(0.95);
+}
+
+.tombol:active {
+  box-shadow: 0 0 0;
+  top: 4px;
+}
