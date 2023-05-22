@@ -10,6 +10,7 @@ html {
   height: 100%;
   background: white;
   background: radial-gradient(circle, white 10%, #eee);
+  background-color: gray;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   color:#aeaeae;
   margin:10px;
   border-radius:12px;
+  text-align: center;
 }
 
 .teks {padding:10px;
